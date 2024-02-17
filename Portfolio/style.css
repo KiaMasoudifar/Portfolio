@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --primary-color: white;
+    --secondary-color: white;
+};
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant', sans-serif;
+    transition-duration: 200ms;
+    transition: 200ms ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border: none;
+    width: 125px;
+    height: 35px;
+    border-radius: 7px;
+    color: #0891b2;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms ease;
+    transition-duration: 300ms;
+
+}
+
+header button:hover {
+    background-color: #0891b2;
+    color: white;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.links a{
+    color: var(--primary-color);
+    transition: 200ms ease;
+    transition-duration: 300ms;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition-duration: 200ms;
+}
+
+
+header h2 {
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 200ms ease;
+    transition-duration: 300ms;
+
+}
+
+header h2:hover {
+    color: #0891b2;
+}
+
+
+header a:hover {
+    opacity: 0.7;
+    color: #0891b2;
+    
+}
+
+header, main, footer {
+    margin: 0 auto;
+    width: 100%;
+}
+
+html {
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+    margin: 0 30px;
+    gap: 20px;
+    background-image: url("./mainBkgimg.svg");
+    overscroll-behavior: none;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.profilePicture img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100%;
+    transition: 200ms ease;
+    transition-duration: 300ms;
+
+}
+
+.profilePicture img:hover {
+
+}
+
+main h2 {
+    color: var(--secondary-color);
+
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    display: flex;
+    color: var(--secondary-color);
+}
+
+.skills li {
+    list-style: none;
+}
+
+.photoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.rowOne {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.photoSection img{
+    width: 300px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 200ms ease;
+    transition-duration: 300ms;
+    opacity: 0.9;
+}
+
+.photoSection img:hover {
+    transform: translateY(-15px);
+    opacity: 1;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rowTwo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: var(--secondary-color);
+}
+
+.Project a{
+    color: var(--secondary-color);
+    transition-duration: 200ms;
+    transition: 200ms ease;
+
+}
+
+.Project a:hover{
+    color: #0891b2;
+}
+
+
+footer {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer button {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+}
+
+footer button .fa-brands {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 200ms ease;
+    transition-duration: 300ms;
+}
+
+footer button .fa-brands:hover{
+    color: #0891b2;
+}
+
+.rightSection {
+    display: flex;
+    gap: 60px;
+}
+
+
+@media only screen and (max-width: 981px) {
+    .photoSection img{
+        width: 200px;
+    }
+
+    .rightSection {
+        gap: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 688px) {
+    .rowOne {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .rightSection {
+        gap: 20px;
+    }
+}

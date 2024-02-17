@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition-duration: 200ms;
+    transition: 200ms ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+html {
+    height: 100%;
+    overflow: hidden
+}
+
+body {
+    background-image: url("backgroundImg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+
+}
+
+header {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    
+}
+
+header a{
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: rgb(75, 174, 224);
+}
+
+/*Contact UI*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact {
+    border: rgb(28, 103, 141) 3px solid;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(59, 8, 59);
+    position: relative;
+    z-index: 3;
+}
+
+
+.title {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: rgb(217, 210, 210);
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.forms input {
+    background-color: transparent;
+    outline: none;
+    border: solid 1px white;
+    border-radius: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    color: rgb(217, 210, 210);
+    width: 400px;
+    height: 35px;
+}
+
+.message {
+}
+
+.submit-button {
+    padding-bottom: 20px;
+}
+
+.submit-button button {
+    background-color: rgb(75, 174, 224);
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 400ms;
+    transition: 400ms ease;
+
+}
+
+.submit-button button:hover {
+    background-color: rgb(48, 134, 177);
+}
+
+@media only screen and (max-width: 713px) {
+
+    .contact {
+        margin: 0;
+        width: 400px;
+    }
+
+    .forms input {
+        width: 300px;
+    }
+
+    header a {
+        font-size: 15px;
+    }
+
+}
